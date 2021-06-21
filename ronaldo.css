@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #252839;
+}
+
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke:0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+h2{
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke:.3vw #383d52;
+    text-transform: uppercase;
+}
+.minhja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #383d52;
+
+}
+h1{
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke:.3vw #383d52;
+    text-transform: uppercase;
+
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke:0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animat 6s linear infinite;
+}
+
+@keyframes animat{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+   
+}
+
+.sa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    box-sizing: border-box;
+    background-color: #252839;
+}
+.sa h3{
+    font-size: 8vw;
+    color: #252839;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke:.1vw #383d52;
+
+}
+.sa h3::before{
+    content:attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    color: #01fe87;
+    overflow: hidden;
+    -webkit-text-stoke:0vw #383d52;
+    border-right: 2px solid #01fe87;
+    animation: animat 10s linear infinite;
+}
+@keyframes animt{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+/*  */
+.df {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: -1350px;
+	left: 0;
+}
+.portrait{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+
+}
+.portrait img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
+.portrait img.texture{
+    mix-blend-mode: multiply;
+    filter: contrast(1.5);
+}
+
+
